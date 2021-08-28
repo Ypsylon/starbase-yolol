@@ -1,0 +1,21 @@
+m="\n" b=((:b1/:b1max)*100) p=(:prop/:propMax)*100 ft=:f1+:f2+:f3+:f4
+fmin=:f1 fid=1 if (:f2 < fmin) then fmin=:f2 fid=2 end
+if (:f3 < fmin) then fmin=:f3 fid=3 end
+if (:f4 < fmin) then fmin=:f4 fid=4 end
+ft=(ft/(:fmax1*4))*100 fmin=(fmin/:fmax1)*100
+m+="Bat: "+b+"\n" m+="Prop: "+p+"\n" m+="F(a): "+ft+"\n"
+m+="F("+fid+"): "+fmin+"\n"
+m+="R: "+:f_rate_max+"/"+:f_rate_cur+"\n"
+m+="R(m): "+:f_rate_min if :status!=m then :status=m end goto1
+// YOLOL ---- STATUS SCREEN
+
+
+
+
+
+
+
+
+
+
+
