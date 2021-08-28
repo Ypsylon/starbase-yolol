@@ -1,0 +1,9 @@
+i = 0 t = 2 :wl=0 :pc=0
+m="TRANS:\n" :transponder=:broadcast
+if :transponder then m+="Active" else m+="Inactive" end m+="\n"
+if :safezone then m+="inside sz" else m+="outside sz" end
+if :transauto then i++ goto 6 else goto 18 end
+m+="\n Autoping in " + (20 - i) if i > 18 then :pc=i%2 :wl=:pc END
+if (i > 20 AND i < 30) then t=3 :transponder=1 m="TRANS:\n" end
+if :pingcancel then :pingcancel=0 t=1 end goto 9
+if (:sm!=m) then :sm=m end goto t

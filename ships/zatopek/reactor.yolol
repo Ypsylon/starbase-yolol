@@ -1,0 +1,3 @@
+s=:rct_Auto+rct_Stop s=s+(s<3) gotos
+IF (:b1<9999)OR(:fcuForward>80) then :rct1=100 :rct2=100 goto 1 end
+:rct1=:rct_min :rct2=:rct_min goto 1

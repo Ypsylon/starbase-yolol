@@ -1,0 +1,6 @@
+m="RF " IF :rf_on THEN m+="ONLINE\n" GOTO2 ELSE m+="OFFLINE\n" END GOTO10
+IF :rf_d != :rf_m THEN GOTO3 ELSE m+="no distance \n" GOTO10 END
+m+="distance"+:rf_d+"\n"
+IF :approach THEN m+="APPROACHING" END GOTO10
+
+if (:rm != m) THEN :rm = m END GOTO 1

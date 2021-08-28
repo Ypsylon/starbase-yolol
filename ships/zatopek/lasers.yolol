@@ -1,0 +1,6 @@
+IF :las_Auto THEN :trt_P=-7.5 GOTO2 END GOTO1
+IF :las_Auto THEN GOTO3 END :las_On=0 :col_On=0 GOTO1
+:las_On=1 :col_On=0
+:las_On=0 :col_On=1
+:las_On=0 :col_On=0
+:las_On=0 :col_On=0 GOTO2
