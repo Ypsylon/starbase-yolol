@@ -4,13 +4,10 @@ if (:f3 < fmin) then fmin=:f3 fid=3 end
 if (:f4 < fmin) then fmin=:f4 fid=4 end
 ft=(ft/(:fmax1*4))*100 fmin=(fmin/:fmax1)*100
 m+="Bat: "+b+"\n" m+="Prop: "+p+"\n" m+="F(a): "+ft+"\n"
-m+="F("+fid+"): "+fmin+"\n"
-m+="R: "+:f_rate_max+"/"+:f_rate_cur+"\n"
+m+="F("+fid+"): "+fmin+"\n" rd=10000
+m+="R: "+((:f_rate_max/rd)*rd)+"/"+((:f_rate_cur/rd)*rd)+"\n"
 m+="R(m): "+:f_rate_min if :status!=m then :status=m end goto1
 // YOLOL ---- STATUS SCREEN
-
-
-
 
 
 

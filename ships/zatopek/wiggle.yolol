@@ -1,0 +1,4 @@
+:l_rot=:crot i=0 if :wiggle then r=:lw_rate goto2 end goto1
+if i > 10 then s=-1 else s=1 end
+:l_pitch=:crot+(r*i)*s :l_yaw=:l_pitch i++
+if (i > 20) then i=0 end goto1+:wiggle

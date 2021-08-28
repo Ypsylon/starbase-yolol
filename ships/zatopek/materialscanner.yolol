@@ -1,8 +1,9 @@
 if :scan==0 then m="Scanner inactive" :sr=0 goto 7 end
 if :sr>0 then m="" goto 4 else m="No ores detected" goto 7 end
 if :i < :sr then goto 4 else :s=1 goto 7 end
-if NOT:i then m="" end m += :m + " " + (:v / 1728) + "\n" :i++ goto 3
+if NOT :i then m="" end m += :m + " " + (:v / 1728) + "\n" :i++ goto 3
 
 
 if m != :mat then :mat = m end 
 if :scan then :s=1 m="" goto 2 else goto 1 end
+// Material scanner -- shitty version --
