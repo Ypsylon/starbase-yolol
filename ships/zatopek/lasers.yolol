@@ -1,2 +1,2 @@
-i=0 if :lasers then goto2 else :l_on_l=0 :_on_r=0 end goto1 
+i=0 if :lasers then goto2 else :l_on_l=0 :l_on_r=0 end goto1 
 :l_on_l=i%2 :l_on_r=1-(i%2) i++ goto1+:lasers
