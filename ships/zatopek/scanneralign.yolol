@@ -1,0 +1,2 @@
+d=-3.1 o=0.6 p=3.141 x=360/(2*p) goto 1+(:rf_on*:scan*(:rf_d<:rf_m))
+l=:rf_d+o c=d/l :cpitch=90-((p/2)-(c+(c^3)/6+(c^5)/40))*x goto1

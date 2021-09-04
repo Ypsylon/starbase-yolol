@@ -1,4 +1,4 @@
-:l_rot=:crot i=0 if :wiggle then r=:lw_rate goto2 end goto1
-if i > 10 then s=-1 else s=1 end
-:l_pitch=:crot+(r*i)*s :l_yaw=:l_pitch i++
-if (i > 20) then i=0 end goto1+:wiggle
+i=-3 j=-5 c=2 p=:lc_pitch y=:lc_yaw
+:l_pitch=p :l_yaw=y w=:wiggle*:lasers goto1+(2*w)
+p=:lc_pitch+(i2) y=:lc_yaw+(j2) if p < -32 then p=32 end goto3+w
+if i>3 then i=-3 j++ end if j>5 then j=-5 end i++ goto1+w
